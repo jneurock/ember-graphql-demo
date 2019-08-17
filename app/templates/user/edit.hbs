@@ -1,0 +1,14 @@
+<form {{action "updateUser" on="submit"}}>
+  <div>
+    <label for="first-name">First name:</label>
+    {{input id="first-name" value=firstName}}
+  </div>
+  <div>
+    <label for="last-name">Last name:</label>
+    {{input id="last-name" value=lastName}}
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+    {{link-to "cancel" "user" model}}
+  </div>
+</form>

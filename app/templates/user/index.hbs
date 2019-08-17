@@ -1,0 +1,12 @@
+<h1>User</h1>
+<ul>
+  <li>ID: {{model.id}}</li>
+  <li>First name: {{model.firstName}}</li>
+  <li>Last name: {{model.lastName}}</li>
+</ul>
+<div>
+  {{link-to "edit this user" "user.edit" model}}
+</div>
+<div>
+  {{link-to "back to all users" "users"}}
+</div>
